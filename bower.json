@@ -1,0 +1,19 @@
+{
+  "name": "blank",
+  "version": "0.1.0",
+  "authors": [
+    "Dan Ratnikov <ratnikov.danil@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "jquery": "~2.1.3"
+  }
+}
