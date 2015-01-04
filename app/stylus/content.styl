@@ -1,4 +1,68 @@
 .content
-	float: right
-	width:740px
-	padding-left: 30px
+	float right
+	width 740px
+	margin-left 30px
+	overflow hidden
+
+.slider
+	margin-bottom 50px
+
+.slider-list
+	padding 0
+	
+.slider-list__item
+	position relative
+
+.slider-list__link
+	display block
+	text-decoration none
+	color
+
+.slider__item-desc
+	position: absolute
+	width 100%
+	bottom 0px
+	background-color rgba(0, 0, 0, 0.5)
+	padding 18px 24px
+
+.item-desc__header
+	font: 18px 'elektra_light_proregular'
+	color #00b9fe
+	text-decoration: underline
+	margin 0 0 8px 0
+
+.item-desc__text
+	font 14px 'elektra_light_proregular'
+	color #fff
+	margin 0
+
+.bx-prev, 
+.bx-next
+	display block
+	position absolute
+	top 103px
+	height 34px
+	width 79px
+	font 16px/38px 'elektra_light_probold'
+	color #5c7b98
+	text-align center
+	text-decoration none
+	background-image url('../img/decor/slider-controls.png')
+	transition color 0.3s ease 0s
+	
+
+.bx-prev
+	left 10px
+	background-position left top
+	&:hover
+		background-position left bottom
+		color #fff
+
+.bx-next
+	right 10px
+	background-position right top
+	&:hover
+		background-position right bottom
+		color #fff
+	
+	

@@ -1,14 +1,24 @@
 section.content
 	.slider
-		.slider-wrapper
-			ul.slider-list
-				- for (var i=1; i<=3; i++)
-					li.slider-list__item
-						a(href="").slider-list__link
-							img.slider-list__img(src="http://lorempixel.com/740/300/technics/" + i, alt="slide" + i)
-							.slider__item-desc
-								h3.item-desc__header iMac за пол цены
-								p.item-desc__text Принеси свой старый Mac и получи скидку на новый!
+		ul.slider-list
+			li.slider-list__item
+				a(href="").slider-list__link
+					img.slider-list__img(src="img/slider/slide1.png", alt="slide 1")
+					.slider__item-desc
+						h3.item-desc__header iMac за пол цены
+						p.item-desc__text Принеси свой старый Mac и получи скидку на новый!
+			li.slider-list__item
+				a(href="").slider-list__link
+					img.slider-list__img(src="img/slider/slide2.png", alt="slide 1")
+					.slider__item-desc
+						h3.item-desc__header До 31 декабря, iPhone 4 за 9900 руб.
+						p.item-desc__text Нет денег на шестой iPhone? Купи себе четвертый!
+			li.slider-list__item
+				a(href="").slider-list__link
+					img.slider-list__img(src="img/slider/slide2.png", alt="slide 1")
+					.slider__item-desc
+						h3.item-desc__header Конкурс на концепт IPhone 7
+						p.item-desc__text Выйграй iPad Air за самый необычный  и интереный дизайн нового iPhone 7.
 	.product.product-popular
 		h2.product__header Популярные товары
 			ul.product__list
