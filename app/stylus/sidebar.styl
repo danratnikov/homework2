@@ -1,6 +1,160 @@
-.body
-
 .sidebar
 	width: 230px
-	padding: 12px
-	background-color: #f4f6f9
+	float: left
+
+// logo
+.logo
+	margin-bottom: 25px
+.logo__link
+	display: block
+	text-decoration: none
+	
+.logo__img
+	display: block
+	max-width: 230px
+
+.logo__text
+	position: absolute
+	left: -9999px
+	
+
+// feedback
+.feedback
+	border-box()
+	padding: 15px 12px
+	margin-bottom: 15px
+	
+.feedback__h2
+	color: #5c7b98
+	font: 25px/20px 'elektra_light_probold', 'Arial', 'sans-serif'
+	text-align: center
+	padding: 0
+	margin: 0 0 25px 0
+	
+.feedback__label
+	cf()
+	display: block
+	margin-bottom: 15px
+
+.feedback__input-title
+	border-box()
+	display: block
+	float: left
+	width: 75px
+	font: 14px/26px 'elektra_light_proregular'
+	color: #5c7b98
+
+// form-input mixin
+form-input()
+	border-box()
+	font: 12px/20px 'elektra_light_proregular'
+	display: block
+	border: 1px solid #dae1eb
+	padding-left: 7px
+	padding-right: 7px
+	&:focus
+		outline: none
+	placeholder-color(#dae1eb)
+	
+	
+.feedback__input
+	form-input()
+	border-box()
+	display: block
+	float: right
+	width: 127px
+	height: 26px
+
+.feedback__input-title__date
+	border-box()
+	width: 90px
+
+.feedback__date-select
+	border-box()
+	cf()
+	float: right
+	width: 111px
+	
+.date-select__select
+	form-input()
+	width: 50px
+	height: 26px
+	float: left
+	margin-left: 10px
+	padding-right: 0
+	&:first-child
+		margin-left: 0
+
+.feedback__textarea
+	form-input()
+	width: 100%
+	height: 69px
+	resize: none
+	margin-bottom: 15px
+	
+//.feedback__btns-row
+.feedback__btn
+	display: block
+	outline: none
+	border: none
+	width: 90px
+	height: 35px
+	font: 15px/35px 'elektra_light_probold'
+	color: #fff
+
+.feedback__btns-row 
+	cf()
+	
+.feedback__btn__submit
+	background-color: #00b9fe
+	float: left
+
+.feedback__btn__clear
+	background-color: #dae1eb
+	float: right
+
+.gallery
+	margin-bottom: 30px
+
+.gallery-list
+	cf()
+	list-style: none
+	padding: 0
+	margin-left: -10px
+
+.gallery-list__item
+	float: left
+	cursor: pointer
+	margin-left: 10px
+	margin-bottom: 10px
+
+.gallery-list__img
+	display: block
+	max-width: 70px
+
+.contacts
+	padding: 15px 24px
+
+.contact-list
+	list-style none
+	padding 0
+
+.contact-list__item
+	font 14px/20px 'elektra_light_proregular'
+	color #5c7b98
+	margin-bottom 14px
+	padding-left: 22px
+	background-repeat no-repeat
+	
+.contact-list__item__link
+	font 14px/20px 'elektra_light_proregular'
+	color #5c7b98
+	text-decoration none
+
+.contact-list__item__tel
+	background-image url('../img/decor/contact-tel-bg.png')
+	margin-left 22px
+
+.contact-list__item__address
+	background-image url('../img/decor/contact-addr-bg.png')
+

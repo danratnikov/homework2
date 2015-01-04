@@ -1,15 +1,19 @@
 section.sidebar
 	.logo
-		a.logo__link AppleShop
+		a.logo__link(href="/")
 			img.logo__img(src="img/logo/logo-header.png" alt="logo")
+			span.logo__text AppleShop
 	.feedback.grey-box
-		form
+		form(action="" method="post")
 			h2.feedback__h2 Заказать звонок
-			label.feedback__label Ваше имя
-				input.feedback__input(type="text" name="feedback_name")
-			label.feedback__label Телефон
-				input.feedback__input(type="text" name="feedback_tel")
-			label.feedback__label Дата звонка
+			label.feedback__label
+				.feedback__input-title Ваше имя
+				input.feedback__input(type="text" name="feedback_name" placeholder="Константин")
+			label.feedback__label
+				.feedback__input-title Телефон
+				input.feedback__input(type="text" name="feedback_tel" placeholder="+79826220560")
+			label.feedback__label
+				.feedback__input-title.feedback__input-title__date Дата звонка
 				.feedback__date-select
 					select.date-select__select(name="feedback_month")
 						- for (var i=1; i<=12; i++)
@@ -17,8 +21,8 @@ section.sidebar
 					select.date-select__select(name="feedback_day")
 						- for (var i=1; i<=31; i++)
 							option(value=i)= i
-			textarea.feedback__textarea(name="feedback_text")
-			.feedback__btns
+			textarea.feedback__textarea(name="feedback_text" placeholder="Текст сообщения")
+			.feedback__btns-row
 				input.feedback__btn.feedback__btn__submit(type="submit" value="Отправить")
 				input.feedback__btn.feedback__btn__clear(type="button" value="Очистить")
 	.gallery
@@ -29,4 +33,5 @@ section.sidebar
 	.contacts.grey-box
 		ul.contact-list
 			li.contact-list__item.contact-list__item__address г. Москва, ул. Новая 246, офис 214.
-			li.contact-list__item.contact-list__item__tel +7(921) 322-12-32
+			li.contact-list__item.contact-list__item__tel
+				a.contact-list__item__link(href="tel:+79213221232") +7(921) 322-12-32

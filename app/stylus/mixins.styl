@@ -1,0 +1,32 @@
+border-radius()
+  -webkit-border-radius: arguments
+  -moz-border-radius: arguments
+  border-radius: arguments
+box-shadow()
+  -webkit-box-shadow: arguments
+  -moz-box-shadow: arguments
+  box-shadow: arguments
+
+border-box()
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+cf()
+  &:before
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+  zoom: 1 if support-for-ie	
+
+placeholder-color(color)
+  &::-webkit-input-placeholder
+    color color
+  &::-moz-placeholder
+    color color
+  &:-moz-placeholder
+    color color
+  &:-ms-input-placeholder
+    color color
