@@ -15,59 +15,61 @@ section.content
 						p.item-desc__text Нет денег на шестой iPhone? Купи себе четвертый!
 			li.slider-list__item
 				a(href="").slider-list__link
-					img.slider-list__img(src="img/slider/slide2.png", alt="slide 1")
+					img.slider-list__img(src="img/slider/slide3.png", alt="slide 1")
 					.slider__item-desc
 						h3.item-desc__header Конкурс на концепт IPhone 7
 						p.item-desc__text Выйграй iPad Air за самый необычный  и интереный дизайн нового iPhone 7.
 	.product.product-popular
 		h2.product__header Популярные товары
-			ul.product__list
-				each product, idx in ["Apple Thunderb Display 27\"", "iMac 27\"", "iPhone 5s Gold"]
-					li.product__item
-						a.product__link(href="")
+		ul.product__list
+			each product, idx in ["Apple Thunderb Display 27\"", "iMac 27\"", "iPhone 5s Gold"]
+				li.product__item
+					a.product__link(href="")
+						.product-thumb
 							.product__img-wrapper
 								img.product__img(src="http://lorempixel.com/90/90/technics/" + idx)
-							p.product__title= product
-							.product-prop
-								table.product-prop__table
-									tr.product-prop__tr
-										td.product-prop__cell Артикул
-										td.product-prop__cell 42787825
-									tr.product-prop__tr
-										td.product-prop__cell Опция
-										td.product-prop__cell Включена
-									tr.product-prop__tr
-										td.product-prop__cell Цвет
-										td.product-prop__cell Серебристый
-									tr.product-prop__tr
-										td.product-prop__cell Размер
-										td.product-prop__cell 1280*1245*90
-									tr.product-prop__tr
-										td.product-prop__cell Вес
-										td.product-prop__cell 9кг
+							h3.product__title= product
+						.product-prop
+							table.product-prop__table
+								tr.product-prop__tr
+									td.product-prop__cell Артикул
+									td.product-prop__cell 42787825
+								tr.product-prop__tr
+									td.product-prop__cell Опция
+									td.product-prop__cell Включена
+								tr.product-prop__tr
+									td.product-prop__cell Цвет
+									td.product-prop__cell Серебристый
+								tr.product-prop__tr
+									td.product-prop__cell Размер
+									td.product-prop__cell 1280*1245*90
+								tr.product-prop__tr
+									td.product-prop__cell Вес
+									td.product-prop__cell 9кг
 	.product.product-discount
 		h2.product__header Товары со скидкой
-			ul.product__list
-				each product, idx in ["iPad Air Wi-Fi 128GB - Silver", "Apple iPod nano 7G 16 ГБ Blue", "Роутер Wi-Fi Apple AirPort"]
-					li.product__item
-						a.product__link(href="")
+		ul.product__list
+			each product, idx in ["iPad Air Wi-Fi 128GB - Silver", "Apple iPod nano 7G 16 ГБ Blue", "Роутер Wi-Fi Apple AirPort"]
+				li.product__item
+					a.product__link(href="")
+						.product-thumb
 							.product__img-wrapper
 								img.product__img(src="http://lorempixel.com/90/90/technics/" + idx)
-							p.product__title= product
-							.product-prop
-								table.product-prop__table
-									tr.product-prop__tr
-										td.product-prop__cell Артикул
-										td.product-prop__cell 42787825
-									tr.product-prop__tr
-										td.product-prop__cell Опция
-										td.product-prop__cell Включена
-									tr.product-prop__tr
-										td.product-prop__cell Цвет
-										td.product-prop__cell Серебристый
-									tr.product-prop__tr
-										td.product-prop__cell Размер
-										td.product-prop__cell 1280*1245*90
-									tr.product-prop__tr
-										td.product-prop__cell Вес
-										td.product-prop__cell 9кг
+							h3.product__title= product
+						.product-prop
+							table.product-prop__table
+								tr.product-prop__tr
+									td.product-prop__cell Артикул
+									td.product-prop__cell 42787825
+								tr.product-prop__tr
+									td.product-prop__cell Опция
+									td.product-prop__cell Включена
+								tr.product-prop__tr
+									td.product-prop__cell Цвет
+									td.product-prop__cell Серебристый
+								tr.product-prop__tr
+									td.product-prop__cell Размер
+									td.product-prop__cell 1280*1245*90
+								tr.product-prop__tr
+									td.product-prop__cell Вес
+									td.product-prop__cell 9кг

@@ -1,3 +1,14 @@
+transition()
+  -webkit-transition: arguments
+  -moz-transition: arguments
+  transition: arguments  
+
+transform()
+  -webkit-transform: arguments
+  -moz-transform: arguments
+  transform: arguments  
+  
+
 border-radius()
   -webkit-border-radius: arguments
   -moz-border-radius: arguments
@@ -30,3 +41,8 @@ placeholder-color(color)
     color color
   &:-ms-input-placeholder
     color color
+
+wow-effect()  
+  transition all 0.3s ease 0s
+  &:hover
+    transform: scale(1.1)
