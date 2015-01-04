@@ -1,0 +1,38 @@
+.container 
+	.footer-logo
+		a.footer-logo__link
+			img.footer-logo__img(src="http://lorempixel.com/199/57/technics/1")
+	.footer-sitemap
+		.footer-menu
+			h3.footer-menu__title О магазине
+			ul.footer-menu__list
+				each item in ["О нас", "Наши цены", "Наши скидки", "Акции"]
+					li.footer-menu__item
+						a.footer-menu__item-link(href="")= item
+		.footer-menu
+			h3.footer-menu__title Каталог
+			ul.footer-menu__list
+				each item in ["Смарфоны", "Планшеты", "Компьютеры", "Аксессуары"]
+					li.footer-menu__item
+						a.footer-menu__item-link(href="")= item
+		.footer-menu
+			h3.footer-menu__title Контакты
+			ul.footer-menu__list
+				each item in ["Телефоны", "Адреса", "Карта проезда", "Обратная связь"]
+					li.footer-menu__item
+						a.footer-menu__item-link(href="")= item
+	.footer-soc
+		.footer-soc-store
+			ul.footer-soc-store__list
+				li.footer-soc-store__item
+					a.footer-soc-store__link.footer-soc-store__link__appstore(href="") Appstore
+				li.footer-soc-store__item
+					a.footer-soc-store__link.footer-soc-store__link__playmarket(href="") Google Play
+		.footer-soc-net
+			ul.footer-soc-net__list
+				li.footer-soc-net__item
+					a.footer-soc-net__link.footer-soc-net__link__vk(href="") Мы в ВКонтакте
+				li.footer-soc-net__item
+					a.footer-soc-net__link.footer-soc-net__link__fb(href="") Мы в Facebook 
+				li.footer-soc-net__item
+					a.footer-soc-net__link.footer-soc-net__link__tw(href="") Мы в Twitter

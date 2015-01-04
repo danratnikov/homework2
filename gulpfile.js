@@ -4,21 +4,23 @@ var gulp = require('gulp'),
 	prettify = require('gulp-html-prettify'),
 	notify = require('gulp-notify'),
 	jade = require('gulp-jade'),
+	concat = require('gulp-concat'),
 	connect = require('gulp-connect'),
 	opn = require('opn'),
 	stylus = require('gulp-stylus'),
-	livereloadPort = 8080,
 	del = require('del');
+
+var	serverPort = 8080;
 
 // Server
 gulp.task('connect', function(){
 	connect.server({
 		root: 'app',
-		port: livereloadPort,
+		port: serverPort,
 		livereload: true
 	});
 	
-	opn('http://localhost:' + livereloadPort);
+	opn('http://localhost:' + serverPort);
 
 });
 
@@ -33,11 +35,11 @@ gulp.task('jade', function(){
 
 // Stylus compile
 gulp.task('stylus', function(){
-	gulp.src('app/stylus/*.styl')
-		.pipe(stylus())
-		.pipe(gulp.dest('app/css'))
-		.pipe(notify("Stylus complete!"))
-		.pipe(connect.reload());
+	gulp.src('app/stylus/main.styl')            // берем main.styl
+		.pipe(stylus())							// компилируем его
+		.pipe(gulp.dest('app/css/'))			// в папку app/css/
+		.pipe(notify("Stylus complete!"))		// показываем уведомление
+		.pipe(connect.reload());				// перезагружаем страницу
 });
 
 // Js reload
@@ -54,8 +56,8 @@ gulp.task('watch', function(){
 });
 
 // Delet files
-gulp.task('clean', function(){
-	del('node_modules/*.*');
+gulp.task('clean', function(path){
+	del(path + "*.*");
 });
 
 // Task default
